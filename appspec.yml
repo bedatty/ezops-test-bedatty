@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/express-app
+    destination: /home/ubuntu/app_simple_chat/ezops-test-bedatty/
 hooks:
   ApplicationStop:
     - location: scripts/application_stop.sh

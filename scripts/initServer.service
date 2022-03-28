@@ -1,0 +1,11 @@
+[Unit]
+Description="Script server-chat initializing after boot"
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/home/ubuntu/app_simple_chat/ezops-test-bedatty/init-server.sh
+TimeoutStartSec=60
+
+[Install]
+WantedBy=default.target

@@ -41,13 +41,13 @@
     }
 
     function getMessages(){
-      $.get('http://54.221.137.21:80/messages', (data) => {
+      $.get('http://lb-app-simple-chat-1871397928.us-east-1.elb.amazonaws.com:80/messages', (data) => {
         data.forEach(addMessages);
       })
     }
 
     function sendMessage(message){
-      $.post('http://54.221.137.21:80/messages', message)
+      $.post('http://lb-app-simple-chat-1871397928.us-east-1.elb.amazonaws.com:80/messages', message)
     }
 </script>
 </body>

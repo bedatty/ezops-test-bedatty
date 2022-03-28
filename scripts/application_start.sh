@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #give permission for everything in the express-app directory
-sudo chmod -R 777 /home/ubuntu/express-app
+sudo chmod -R 777 /home/ubuntu/app_simple_chat/ezops-test-bedatty/
 
 #navigate into our working directory where we have all our github files
-cd /home/ubuntu/express-app
+cd /home/ubuntu/app_simple_chat/ezops-test-bedatty/
 
 #add npm and node to path
 export NVM_DIR="$HOME/.nvm"	

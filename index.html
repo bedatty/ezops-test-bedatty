@@ -19,6 +19,7 @@
         <textarea id = "message" class="form-control" placeholder="Your Message Here"></textarea>
         <br>
         <button id="send" class="btn btn-success">Send</button>
+        <button id="clear" class="btn btn-success">Clear</button>
     </div>
     <div id="messages">
 
@@ -29,9 +30,15 @@
     $(() => {
         $("#send").click(()=>{
             sendMessage({name: $("#name").val(), message: $("#message").val()});
+            
         })
-
+        
         getMessages()
+
+        $("#clear").click(()=>{
+          name.val("");
+          message.val("");
+        })
     })
 
     socket.on('message', addMessages)
